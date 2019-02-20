@@ -1,0 +1,119 @@
+* {
+	box-sizing: content-box;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+#center {
+    position: absolute;
+    left: calc(50% - 135px);
+}
+
+/* body {
+    width: 300px;
+    height: 400px;
+    padding: 30px 0 30px 20px;
+} */
+/*********************pay_title***********************/
+#pay_title {
+    position: relative;
+    font-weight: bold;
+    width: 250px;
+    height: 25px;
+    padding: 0 10px;
+    border-bottom: solid 3px rgb(100, 100, 100);
+    margin-bottom: 15px;
+}
+/*********************agree***********************/
+#agree {
+    position: relative;
+    width: 270px;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.title {
+    position: relative;
+    width: 230px;
+    padding-left: 10px;
+    border-left: solid 5px rgb(243, 119, 117);
+    margin-bottom: 10px;
+}
+#agree_main {
+    height: 60px;
+    font-size: 12px;
+    padding: 5px 10px;
+    line-height: 20px;
+    border: solid 1px black;
+    margin-bottom: 5px;
+}
+#agree_text {
+    position: relative;
+    float: left;
+    width: 190px;
+}
+#agree_all {
+    position: relative;
+    float: left;
+    color: rgb(100, 100, 100);
+    cursor: pointer;
+}
+#agree_check {
+    width: 260px;
+    padding-right: 10px;
+    text-align: right;
+}
+/*********************price***********************/
+#price {
+    position: relative;
+    margin-bottom: 15px;
+    width: 270px;
+}
+#price_bill {
+    position: relative;
+    font-size: 13px;
+    border: solid 1px rgb(200, 200, 200);
+    height: 20px;
+    padding: 10px 10px;
+}
+#price_text {
+    position: relative;
+    float: left;
+    width: 190px;
+}
+#price_number {
+    position: relative;
+    float: left;
+    font-weight: bold;
+}
+/*********************radio_box***********************/
+#pay_way {
+    position: relative;
+    margin-bottom: 15px;
+}
+#radio_box {
+    position: relative;
+    width: 250px;
+    height: 50px;
+    padding: 15px 10px;
+    border: solid 1px black;
+    line-height: 25px;
+    font-size: 13px;
+}
+.radio_button {
+    margin: 0 3px 0 25px;
+    cursor: pointer;
+}
+label {
+	cursor: pointer;
+}
+/*********************button***********************/
+#pay_enter {
+    position: relative;
+    width: 100px;
+    height: 30px;
+    margin-top: 30px;
+    margin-left: 70px;
+}

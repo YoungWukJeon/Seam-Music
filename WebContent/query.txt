@@ -1,0 +1,5 @@
+create database seam;
+use mysql;
+insert into user(host, user, password, ssl_type, ssl_cipher, x509_issuer, x509_subject) values('localhost', 'seamuser', password('seampass'), '','','','');
+insert into db values('localhost', 'seam', 'seamuser', 'y', 'y', 'y', 'y', 'y', 'y', 'y', 'y', 'y', 'y', 'y', 'y', 'y', 'y', 'y', 'y', 'y', 'y', 'y');
+mysqladmin -u root -p reload

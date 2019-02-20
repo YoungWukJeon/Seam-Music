@@ -1,0 +1,266 @@
+@media all and (min-width: 768px) {
+    html {}
+    body {}
+    header {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100px;
+    }
+    #header {
+        position: absolute;
+        left: 0;
+        right: 0;
+        min-width: 1050px;
+        max-width: 1050px;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    #nav {
+        position: absolute;
+        display: none;
+        left: 0%;
+        top: 40px;
+        width: 20px;
+        height: 20px;
+    }
+    #mode {
+        position: absolute;
+        left: 0%;
+        top: 40px;
+        width: 150px;
+        height: 20px;
+        padding: 0 19px;
+    }
+    #logo {
+        position: absolute;
+        left: 42%;
+        top: 10px;
+        width: 150px;
+        height: 75px;
+    }
+    #search {
+        position: absolute;
+        right: 0%;
+        top: 50px;
+        width: 250px;
+        height: 40px;
+        padding: 0 19px;
+    }
+    #search2 {
+        display: none;
+    }
+    article {
+        position: absolute;
+        left: 0;
+        top: 100px;
+        width: 100%;
+        height: 580px;
+        min-width: 1050px;
+        border-top: solid 2.5px rgb(251, 64, 59);
+        border-bottom: solid 2.5px rgb(251, 64, 59);
+    }
+    #container {
+        position: absolute;
+        left: 50%;
+        width: 1000px;
+        height: 100%;
+        margin: 0 auto;
+        margin-left: -535px;
+    }
+    section#menu {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 75px;
+        height: 360px;
+        border-right: solid 2.5px rgb(251, 64, 59);
+        margin-top: 50px;
+        padding: 0 19px;
+    }
+    #menu_chart {
+        width: 60px;
+        height: 60px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 7px;
+    }
+    #menu_radio {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+        padding-left: 7px;
+    }
+    #menu_dj {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+        padding-left: 7px;
+    }
+    #menu_chart2 {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+        padding-left: 7px;
+    }
+    #menu_chart3 {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+        padding-left: 7px;
+    }
+    section#content {
+        position: absolute;
+        left: 120px;
+        top: 0;
+        width: 650px;
+        height: 95%;
+        margin-top: 20px;
+    }
+    section#sub {
+        position: absolute;
+        left: 790px;
+        top: 0;
+        width: 250px;
+        height: 100%;
+        margin-top: 20px;
+    }
+    #sub_login {
+        width: 250px;
+        height: 100px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #sub_chart {
+        width: 250px;
+        height: 420px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    footer {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0px;
+        width: 100%;
+        height: 75px;
+        min-width: 1050px;
+        margin: 0 auto;
+    }
+    #player {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media all and (max-width: 767px) {
+    html {}
+    body {}
+    header {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 70px;
+        border-bottom: solid 2.5px rgb(251, 64, 59);
+    }
+    #header {
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    #nav {
+        position: absolute;
+        left: 0%;
+        top: 30px;
+        width: 25px;
+        height: 25px;
+        padding: 0 19px;
+    }
+    #mode {
+        position: absolute;
+        display: none;
+        left: 0%;
+        top: 50px;
+        width: 240px;
+        height: 40px;
+    }
+    #logo {
+        position: absolute;
+        left: 38%;
+        top: 10px;
+        width: 100px;
+        height: 50px;
+    }
+    #search {
+        position: absolute;
+        display: none;
+        right: 0%;
+        top: 50px;
+        width: 250px;
+        height: 40px;
+    }
+    #search2 {
+        position: absolute;
+        right: 0%;
+        top: 30px;
+        width: 25px;
+        height: 25px;
+        padding: 0 19px;
+    }
+    article {
+        display: none;
+    }
+    #container {
+        display: none;
+    }
+    section#menu {
+        display: none;
+    }
+    #menu_chart {
+        display: none;
+    }
+    #menu_radio {
+        display: none;
+    }
+    #menu_dj {
+        display: none;
+    }
+    #menu_chart2 {
+        display: none;
+    }
+    #menu_chart3 {
+        display: none;
+    }
+    section#content {
+        display: none;
+    }
+    section#sub {
+        display: none;
+    }
+    #sub_login {
+        display: none;
+    }
+    #sub_chart {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+    #player {
+        display: none;
+    }
+}

@@ -1,0 +1,239 @@
+* {
+    box-sizing: content-box;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+body {
+    position: absolute;
+    left: calc(50% - 500px);
+}
+#information {
+    position: relative;
+    height: 280px;
+    width: 1000px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#information_span {
+    position: absolute;
+    font-size: 14pt;
+}
+#information_box {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    height: 250px;
+    width: 100%;
+    background: rgb(180, 180, 180);
+}
+#information_img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 210px;
+    height: 210px;
+}
+#information_title {
+    position: absolute;
+    top: 30px;
+    left: 260px;
+    font-size: 20pt;
+    font-weight: bold;
+}
+.detail_span {
+    position: relative;
+    top: 75px;
+    left: 260px;
+    line-height: 15pt;
+    font-size: 10pt;
+    color: rgb(100, 100, 100);
+}
+.detail_database {
+    position: absolute;
+    top: 75px;
+    left: 350px;
+    line-height: 15pt;
+    font-size: 10pt;
+}
+#information_box input {
+    position: absolute;
+    top: 200px;
+    width: 70px;
+    height: 25px;
+    border: none;
+    cursor: pointer;
+}
+#btn_like {
+    left: 260px;
+}
+#btn_listen {
+    left: 340px;
+}
+
+#lyrics_title_header {
+	margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-left: solid 4px rgb(251, 59, 64);
+}
+
+
+/* .music_table_title {
+    position: relative;
+    width: 100%;
+    font-size: 14pt;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: solid 2px rgb(220, 220, 220);
+}
+.colorbox {
+    position: relative;
+    float: left;
+    width: 5px;
+    height: 26px;
+    background: rgb(243, 119, 117);
+    margin-right: 10px;
+} */
+.info_btn {
+    position: absolute;
+    width: 130px;
+    top: 200px;
+    left: 250px;
+    padding:3px 8px 3px 8px;
+    text-align: right;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(250, 250, 250)), to(rgb(200, 200, 200)));
+    color: rgb(130, 130, 130);
+    font-weight: 900;
+    font-size: 10pt;
+    border-radius:5px;
+    border:solid 2px rgb(210, 210, 210);
+    border-bottom-color:rgb(220, 220, 220);
+}
+.info_btn img {
+	position: absolute !important;
+	left: 15px !important;
+	top: 8px !important;
+    width: 10px !important;
+    height: 10px !important;
+}
+#listen_button {
+	width: 80px;
+    left: 410px;
+}
+
+.move_artist, .move_album, .move_playlist {
+	cursor: pointer;
+}
+
+/**************************** *lyrics *******************************/
+#lyrics_title {
+    position: relative;
+    width: 1000px;
+    margin-bottom: 30px;
+}
+#lyrics_box {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 30px;
+    height: 350px;
+    width: 920px;
+    padding: 10px;
+    font-size: 10pt;
+    border: solid 1px rgb(200, 200, 200);
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#lyrics_box ul {
+	/* width: 100%;
+	height: auto;
+	border: solid 2px rgb(251, 59, 64); */
+	padding: 0 0 0 10px;
+} 
+		
+#lyrics_box ul li {
+	width: 100%;
+	height: 20px;
+	list-style: none;
+}
+/************************ *music_include **************************/
+#music_include {
+    position: relative;
+    width: 1000px;
+    height: auto;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+#music_include_header {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-left: solid 4px rgb(251, 59, 64);
+}
+
+#album_introduce_content {
+	position: relative;
+    width: 1000px;
+    height: 180px;
+}
+
+.include_dj {
+    position: relative;
+    float: left;
+    margin-top: 20px;
+    width: 300px;
+    height: 140px;
+    margin-right: 30px;
+    background: rgb(200, 200, 200);
+}
+.include_dj img {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    width: 120px;
+    height: 120px;
+    border: 1px solid rgb(100, 100, 100);
+}
+.include_dj span {
+    position: absolute;
+    top: 55px;
+    left: 150px;
+    font-size: 10pt;
+    color: rgb(100, 100, 100);
+}
+#dj_title {
+    position: absolute;
+    width: 140px;
+    top: 30px;
+    left: 150px;
+    font-size: 11pt;
+    font-weight: bold;
+    color: black;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+#no_playlist {
+    display: inline-block;
+    position: relative;
+    width: 98%;
+    height: 150px;
+    margin: 0 1%;
+    /*border-right: solid 2px rgb(150, 150, 150);*/
+}
+
+#no_playlist span {
+	position: absolute;
+	width: 400px;
+	height: 36px;
+	left: calc(50% - 200px);
+	top: calc(50% - 18px);
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+}

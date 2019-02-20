@@ -1,0 +1,689 @@
+* {
+    box-sizing: content-box;
+}
+
+body {}
+
+::-webkit-scrollbar {
+    width: 0px;
+    /* remove scrollbar space */
+    background: transparent;
+    /* optional: just make scrollbar invisible */
+}
+
+#center {
+    position: absolute;
+    left: calc(50% - 500px);
+}
+
+#header {
+	position: relative;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#playList_content {
+    width: 1000px;
+    height: 200px;
+    margin: 10px 0 20px 10px;
+    border: solid 1px rgb(150, 150, 150);
+    border-top: solid 3px rgb(60, 60, 60);
+}
+
+#playList_img {
+    display: inline-block;
+    float: left;
+    width: 160px;
+    height: 160px;
+    margin: 20px;
+}
+
+#playList_img img {
+    width: 100%;
+    height: 100%;
+    border: solid 1px rgb(180, 180, 180);
+}
+
+#playList_info {
+    display: inline-block;
+    float: left;
+    width: 500px;
+    height: 160px;
+    margin: 20px 0 20px 0;
+    border-right: solid 1px rgb(180, 180, 180);
+}
+
+#playList_info_header {
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#playList_info_regist_date {
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+#playList_info_theme {
+    height: 40px;
+    font-size: 12px;
+}
+
+/* #playList_info_like {
+	display: relative;
+	float: right;
+	margin-right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+} */
+
+.info_btn {
+    position: absolute;
+    width: 130px;
+    top: 220px;
+    left: 540px;
+    padding:3px 8px 3px 8px;
+    text-align: right;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(250, 250, 250)), to(rgb(200, 200, 200)));
+    color: rgb(130, 130, 130);
+    font-weight: 900;
+    font-size: 10pt;
+    border-radius:5px;
+    border:solid 2px rgb(210, 210, 210);
+    border-bottom-color:rgb(220, 220, 220);
+}
+.info_btn img {
+	position: absolute !important;
+	left: 15px !important;
+	top: 8px !important;
+    width: 10px !important;
+    height: 10px !important;
+}
+
+#creator_info {
+    display: inline-block;
+    float: left;
+    width: 255px;
+    height: 160px;
+    margin: 20px;
+}
+
+#creator_header {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(90, 90, 90);
+    border-bottom: solid 2px rgb(60, 60, 60);
+}
+
+#creator_content {
+    height: 80px;
+    border-bottom: solid 1px rgb(210, 210, 210);
+}
+
+#profile_image {
+    display: inline-block;
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin: 10px 0;
+    border: solid 1px rgb(180, 180, 180);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#profile_image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#creator_detail {
+    display: inline-block;
+    float: left;
+    margin: 10px 0 10px 10px;
+}
+
+#creator_name {
+	position: relative;
+    margin: 5px 0 5px 0;
+    height: 25px;
+}
+
+#creator_name div {
+	display: inline-block;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	
+}
+
+#creator_name div img {
+    /* font-size: 13px;
+    border: solid 1px rgb(251, 59, 64);
+    border-radius: 10px; */
+    width: 100%;
+    height: 100%;
+}
+
+#creator_name span {
+	display: inline-block;
+	position: absolute;
+	width: calc(100% - 30px);
+	height: 30px;
+	left: 30px;
+	font-size: 20px;
+    font-weight: bold;
+    color: rgb(251, 59, 64);
+    cursor: pointer;
+}
+
+#creator_playList_num {
+    font-size: 15px;
+}
+
+#creator_intro {
+    height: auto;
+    margin-top: 5px;
+}
+
+#intro {
+    margin-left: 10px;
+    margin-bottom: 30px;
+    height: auto;
+}
+
+#intro_header {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-left: solid 4px rgb(251, 59, 64);
+}
+
+#intro_content {
+    height: auto;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+#intro_tag {
+    height: auto;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#musicList {
+    margin-left: 10px;
+    margin-bottom: 30px;
+    height: auto;
+}
+
+#musicList_header {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-left: solid 4px rgb(251, 59, 64);
+}
+
+#musicList_btns {
+    width: 1000px;
+    height: 50px;
+}
+
+#musicList_btns a {
+    display: inline-block;
+    height: 20px;
+    padding: 8px 10px 5px 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 12pt;
+    line-height: 20px;
+    color: #B4B4B4;
+    background-color: white;
+}
+
+#musicList_btns a font {
+    color: black;
+}
+
+
+/* Color Circles */
+
+#musicList_btns a:before {
+    display: inline-block;
+    content: '';
+    background-size: 15px 15px;
+    width: 15px;
+    height: 15px;
+    top: 8px;
+    left: 8px;
+}
+
+
+/* Clear Floats */
+
+#musicList_btns:before,
+#musicList_btns:after {
+    content: '';
+    display: inline-block;
+    clear: both;
+}
+
+#all_select {
+    left: 25px;
+    top: 10px;
+    border-radius: 7px;
+    border-style: solid;
+}
+
+#select_listen {
+    left: 145px;
+    top: 10px;
+    border-radius: 7px;
+    border-style: solid;
+}
+
+#select_add {
+    left: 265px;
+    top: 10px;
+    border-radius: 7px;
+    border-style: solid;
+}
+
+#all_select:before {
+    background: url('../image/check_icon.png') no-repeat top left;
+}
+
+#select_listen:before {
+    background: url('../image/listen_over_icon.png') no-repeat top left;
+}
+
+#select_add:before {
+    background: url('../image/add_over_icon.png') no-repeat top left;
+}
+
+#musicList_content {
+    width: 1000px;
+    height: auto;
+    margin-bottom: 50px;
+    border-top: solid 2px rgb(130, 130, 130);
+    border-bottom: solid 2px rgb(130, 130, 130);
+}
+
+#musicList_content_title {
+    position: relative;
+    width: 970px;
+    height: 35px;
+    left: 15px;
+    border-bottom: solid 3px rgb(251, 159, 164);
+    color: black;
+}
+
+#musicList_box {
+    position: relative;
+    height: auto;
+}
+
+#musicList_no {
+    display: inline-block;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 73px;
+    top: 5px;
+}
+
+#musicList_music {
+    display: inline-block;
+    position: absolute;
+    width: 50px;
+    height: 35px;
+    left: 275px;
+    top: 5px;
+}
+
+#musicList_artist {
+    display: inline-block;
+    position: absolute;
+    width: 70px;
+    height: 35px;
+    left: 475px;
+    top: 5px;
+}
+
+#musicList_album {
+    display: inline-block;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 700px;
+    top: 5px;
+}
+
+#musicList_listen {
+    display: inline-block;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 825px;
+    top: 5px;
+}
+
+#musicList_add {
+    display: inline-block;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 875px;
+    top: 5px;
+}
+
+#musicList_lyrics {
+    display: inline-block;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 925px;
+    top: 5px;
+}
+
+
+/***********/
+
+.musicList_content_list {
+    position: relative;
+    width: 970px;
+    height: 60px;
+    left: 15px;
+    border-bottom: solid 1px rgb(180, 180, 180);
+}
+
+.musicList_select {
+    display: inline-block;
+    position: absolute;
+    width: 25px;
+    height: 60px;
+    left: 15px;
+    top: 25px;
+}
+
+.musicList_no {
+    display: inline-block;
+    position: absolute;
+    width: 35px;
+    height: 60px;
+    left: 50px;
+    top: 25px;
+    text-align: right;
+}
+
+.musicList_music {
+    display: inline-block;
+    position: absolute;
+    width: 270px;
+    height: 50px;
+    left: 120px;
+    top: 10px;
+}
+
+.musicList_music img {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.musicList_music span {
+    position: absolute;
+    width: 215px;
+    height: 35px;
+    left: 55px;
+    top: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.musicList_artist {
+    display: inline-block;
+    position: absolute;
+    width: 175px;
+    height: 25px;
+    left: 425px;
+    top: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+}
+
+.musicList_artist span {
+	cursor: pointer;
+}
+
+.musicList_album {
+    display: inline-block;
+    position: absolute;
+    width: 150px;
+    height: 25px;
+    left: 650px;
+    top: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.musicList_listen {
+    display: inline-block;
+    position: absolute;
+    width: 35px;
+    height: 30px;
+    left: 825px;
+    top: 25px;
+}
+
+.musicList_listen img {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 5px;
+    top: 2.5px;
+    cursor: pointer;
+}
+
+.musicList_add {
+    display: inline-block;
+    position: absolute;
+    width: 35px;
+    height: 30px;
+    left: 875px;
+    top: 25px;
+}
+
+.musicList_add img {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 5px;
+    top: 2.5px;
+    cursor: pointer;
+}
+
+.musicList_lyrics {
+    display: inline-block;
+    position: absolute;
+    width: 35px;
+    height: 30px;
+    left: 925px;
+    top: 25px;
+}
+
+.musicList_lyrics img {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 5px;
+    top: 2.5px;
+    cursor: pointer;
+}
+
+
+/***********/
+
+#another_playList {
+    margin-left: 10px;
+    margin-bottom: 30px;
+    height: auto;
+}
+
+#another_playList_header {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-left: solid 4px rgb(251, 59, 64);
+}
+
+#another_playList_header span {
+	color: rgb(251, 59, 64);
+	cursor: pointer;
+}
+
+#another_playList_content {
+    height: 150px;
+}
+
+#best1 {
+    display: inline-block;
+    float: left;
+    width: 48%;
+    margin: 0 1%;
+    /*border-right: solid 2px rgb(150, 150, 150);*/
+}
+
+.another_playList_img {
+    display: inline-block;
+    float: left;
+    width: 120px;
+    height: 120px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.another_playList_img img {
+    width: 100%;
+    height: 100%;
+    border: solid 1px rgb(180, 180, 180);
+}
+
+.another_playList_content {
+    display: inline-block;
+    float: left;
+    margin-top: 15px;
+}
+
+.another_playList_title {
+	width: 250px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+	cursor: pointer;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.another_playList_detail {
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.another_playList_like {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.another_playList_top1_music {
+    margin-left: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.another_playList_top1_music span {
+	position: relative;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+}
+
+.another_playList_top1_music span img {
+	width: 100%;
+	height: 100%;	
+}
+
+.another_playList_top1_music div {
+	display: inline-block;
+	font-size: 10px;
+}
+
+#best2 {
+    display: inline-block;
+    float: left;
+    width: 48%;
+    margin-left: 1%;
+}
+
+#no_playlist {
+    display: inline-block;
+    position: relative;
+    width: 98%;
+    height: 150px;
+    margin: 0 1%;
+    /*border-right: solid 2px rgb(150, 150, 150);*/
+}
+
+#no_playlist span {
+	position: absolute;
+	width: 400px;
+	height: 36px;
+	left: calc(50% - 200px);
+	top: calc(50% - 18px);
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+
+/***********************다이얼로그************************/
+
+.modal-body {
+    margin: 0;
+    padding: 1px;
+}
+
+.modal-footer {
+    margin: 0;
+}
+
+#lyrics_dialog {
+    width: 510px;
+}
+
+#lyrics_iframe {
+    width: 100%;
+    height: 420px;
+    border: none;
+}
+
+#lyrics_iframe::-webkit-scrollbar {
+    display: none;
+}
+
+
+/*****************************************************/

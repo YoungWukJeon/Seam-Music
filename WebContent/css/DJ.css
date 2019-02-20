@@ -1,0 +1,664 @@
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+#center {
+    position: absolute;
+    left: calc(50% - 500px);
+}
+
+#title {
+    position: relative;
+    margin-top: 20px;
+    font-size: 15pt;
+}
+
+#title_sub {
+    font-size: 10pt;
+    color: rgb(150, 150, 150);
+}
+
+#main_content {
+    position: relative;
+    width: 1000px;
+    height: auto;
+    border-top: solid 2px rgb(100, 100, 100);
+    border-bottom: solid 2px rgb(100, 100, 100);
+}
+
+#dj_search_request {
+    width: 100%;
+    height: 45px;
+    border-bottom: solid 1px rgb(100, 100, 100);
+}
+
+#search_select {
+    position: absolute;
+    top: 10px;
+    width: 150px;
+    height: 25px;
+}
+
+#search_text {
+    position: absolute;
+    top: 10px;
+    left: 155px;
+    width: 190px;
+    height: 25px;
+    font-size: 9pt;
+    padding-left: 10px;
+}
+
+#search_button {
+    position: absolute;
+    top: 10px;
+    left: 365px;
+    width: 50px;
+    height: 25px;
+}
+
+#dj_request {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 100px;
+    height: 25px;
+    background: rgb(120, 120, 120);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#today_img {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: 1px;
+    top: 40px;
+    z-index: 2;
+}
+
+#today_dj {
+    position: relative;
+    width: 965px;
+    height: 210px;
+    margin: 10px 0 10px 15px;
+    background-color: rgb(210, 210, 210);
+    border: solid 2px rgb(90, 90, 90);
+}
+
+#today_dj_content {
+    width: 955px;
+    height: 200px;
+    margin: 5px;
+    background-color: white;
+}
+
+#today_main_content {
+    position: absolute;
+    width: 650px;
+    height: 200px;
+}
+
+#today_main_content_img {
+    position: absolute;
+    width: 250px;
+    height: 160px;
+    left: 15px;
+    top: 20px;
+    cursor: pointer;
+}
+
+#today_main_content_img img {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: solid 1px rgb(120, 120, 120);
+}
+
+#today_main_content_content {
+    position: absolute;
+    width: 375px;
+    height: 160px;
+    left: 270px;
+    top: 20px;
+    border-right: solid 1px rgb(180, 180, 180);
+}
+
+#today_main_list_name {
+    width: 100%;
+    padding-left: 7px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#today_main_dj_name {
+    width: 97%;
+    margin-top: 15px;
+    margin-right: 3%;
+    text-align: right;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(251, 59, 64);
+    cursor: pointer;
+}
+
+#today_main_line {
+    width: 95%;
+    height: 1px;
+    margin: 5px 2.5% 20px 2.5%;
+    background-color: rgb(210, 210, 210);
+}
+
+#today_main_theme {
+    width: 98%;
+    padding-left: 5px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#today_main_music_num {
+    width: 98%;
+    padding-left: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#today_main_like {
+    width: 97%;
+    margin-right: 3%;
+    text-align: right;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#today_sub_content {
+    position: absolute;
+    width: 305px;
+    height: 200px;
+    left: 655px;
+}
+
+.today_sub_content {
+    position: absolute;
+    width: 100%;
+    height: 85px;
+    top: 20px;
+}
+
+.today_sub_content_img {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 120px;
+    height: 75px;
+    cursor: pointer;
+}
+
+.today_sub_content_img img {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: solid 1px rgb(120, 120, 120);
+}
+
+.today_sub_content_content {
+    position: absolute;
+    left: 130px;
+    top: 5px;
+    width: 170px;
+    height: 75px;
+}
+
+.today_sub_list_name {
+    width: 100%;
+    padding-left: 4px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.today_sub_theme {
+    width: 98%;
+    height: 15px;
+    margin-top: 7px;
+    padding-left: 2px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.today_sub_hot_icon {
+    display: inline-block;
+    float: left;
+    width: 50px;
+    height: 30px;
+    margin-left: 3%;
+    margin-top: 5px;
+}
+
+.today_sub_hot_icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.today_sub_like {
+    display: inline-block;
+    float: right;
+    width: 57%;
+    margin-top: 10px;
+    margin-right: 3%;
+    text-align: right;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.today_sub_line {
+    position: absolute;
+    width: 95%;
+    height: 1px;
+    left: 2.5%;
+    background-color: rgb(210, 210, 210);
+}
+
+#no_today_dj {
+	position: relative;
+    width: 965px;
+    height: 210px;
+    margin: 10px 0 10px 15px;
+    background-color: rgb(240, 240, 240);
+    border: solid 2px rgb(180, 180, 180);
+}
+
+#no_today_dj span {
+	display: inline-block;
+	position: absolute;
+	width: 370px;
+	height: 72px;
+	left: calc(50% - 185px);
+	top: calc(50% - 36px);
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	color: rgb(60, 60, 60);
+}
+
+#dj_list {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#dj_header {
+    width: 100%;
+    height: 20px;
+}
+
+#total_count {
+    display: inline-block;
+    float: left;
+    width: 47%;
+    margin-left: 2%;
+}
+
+#total_count span {
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(251, 59, 64);
+}
+
+#dj_list_filter {
+    display: inline-block;
+    float: right;
+    width: 47%;
+    margin-right: 2%;
+    text-align: right;
+}
+
+#order_recently {
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#order_like {
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.selected_order {
+    font-weight: bold;
+}
+
+#dj_content_list {
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-top: solid 2px rgb(120, 120, 120);
+    border-bottom: solid 2px rgb(120, 120, 120);
+}
+
+.dj_content {
+    position: relative;
+    width: 100%;
+    height: 120px;
+}
+
+.dj_regist_date {
+    position: absolute;
+    width: 80px;
+    height: 120px;
+    left: 10px;
+}
+
+.dj_regist_date_day {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    left: 21px;
+    top: 24px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.dj_regist_date_yearnmonth {
+    position: absolute;
+    width: 64px;
+    height: 24px;
+    left: 8px;
+    top: 64px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.dj_list_img {
+    position: absolute;
+    width: 180px;
+    height: 120px;
+    left: 95px;
+    cursor: pointer;
+}
+
+.dj_list_img img {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: solid 1px rgb(120, 120, 120);
+}
+
+.dj_list_content {
+    position: absolute;
+    width: 570px;
+    height: 120px;
+    left: 290px;
+}
+
+.dj_list_name {
+    width: 98%;
+    height: 30px;
+    margin-top: 7px;
+    padding-left: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.dj_list_dj_name {
+    width: 99%;
+    margin-top: 7px;
+    font-weight: bold;
+    color: rgb(251, 59, 64);
+    cursor: pointer;
+}
+
+.dj_list_theme {
+    width: 98%;
+    height: 24px;
+    margin-top: 5px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+}
+
+.dj_list_music_num {
+    width: 98%;
+    font-weight: bold;
+}
+
+.dj_list_like {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    left: 885px;
+    top: 45px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#no_dj {
+	position: relative;
+    width: 100%;
+    height: 120px;
+}
+
+#no_dj span {
+	position: absolute;
+	width: 400px;
+	height: 36px;
+	left: calc(50% - 200px);
+	top: calc(50% - 18px);
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+
+/***********************다이얼로그************************/
+
+.modal-body {
+    margin: 0;
+    padding: 1px;
+}
+
+.modal-footer {
+    margin: 0;
+}
+
+#regist_dialog {
+    width: 640px;
+}
+
+#regist_iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+
+#regist_iframe::-webkit-scrollbar {
+    display: none;
+}
+
+.constraint {
+    font-size: 9px;
+    color: rgb(150, 150, 150);
+}
+
+.constraint ul {
+    padding: 0;
+    padding-left: 10px;
+    margin: 0;
+    margin-top: 3px;
+}
+
+
+/*****************************************************/
+
+
+/*#main_slide {
+    position: absolute;
+    top: 70px;
+    left: 150px;
+    width: 350px;
+    height: 300px;
+}
+
+.lSSlideWrapper usingCss {
+    height: 350px;
+}
+
+#vertical img {
+    width: 290px;
+    height: 290px;
+}*/
+
+
+/**********************************************************/
+
+
+/*#all_content {
+    position: absolute;
+    top: 390px;
+    left: 0;
+    width: 100%;
+    font-size: 11pt;
+    border-top: solid 2px rgb(100, 100, 100);
+    border-bottom: solid 2px rgb(100, 100, 100);
+    border-collapse: collapse;
+}
+
+.wrap {
+    width: 100%;
+    background: yellow;
+}
+
+.playList_img {
+    display: inline-block;
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+}
+
+.playList_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.playList_content {
+    display: inline-block;
+    float: left;
+    width: 200px;
+    max-width: 280px;
+    height: 150px;
+    margin: 15px;
+}
+
+.playList_title {}*/
+
+
+/**********************************************************/
+
+
+/*#dj_info {
+    position: absolute;
+    top: 70px;
+    left: 520px;
+    height: 290px;
+    width: 300px;
+    background: rgb(200, 200, 200);
+    border-radius: 3px;
+}
+
+#dj_info img {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    height: 50px;
+    width: 50px;
+}
+
+#dj_info_span1 {
+    position: absolute;
+    left: 30px;
+    top: 90px;
+    font-size: 13pt;
+}
+
+#dj_info_span2 {
+    position: absolute;
+    top: 120px;
+    left: 40px;
+    font-size: 10pt;
+}
+
+table {
+    position: absolute;
+    top: 390px;
+    left: 0;
+    width: 100%;
+    font-size: 11pt;
+    border-top: solid 2px rgb(100, 100, 100);
+    border-bottom: solid 2px rgb(100, 100, 100);
+    border-collapse: collapse;
+}
+
+thead {
+    border-bottom: solid 2px rgb(150, 150, 150);
+}
+
+.thead_td {
+    text-align: center;
+    height: 30px;
+}
+
+.table_rank {
+    text-align: center;
+}
+
+.table_dj {
+    display: table-cell;
+}
+
+
+/*.table_playname {
+}*/
+
+
+/*.table_date {
+    text-align: center;
+}
+
+.tbody_td {
+    height: 70px;
+    vertical-align: middle;
+}
+
+.tbody_td img {
+    width: 70px;
+    height: 70px;
+}
+
+.tbody_td span {
+    vertical-align: middle;
+}*/

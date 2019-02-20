@@ -1,0 +1,211 @@
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+body {
+    width: 700px;
+    height: 350px;
+}
+#left {
+    position: relative;
+    float: left;
+    width: 280px;
+    height: 350px;
+    background: #eaeaea;
+}
+#left_img {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 200px;
+    height: 200px;
+}
+#current_info {
+    position: absolute;
+    top: 250px;
+    left: 40px;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    color: #333;
+    font-size: 10pt;
+}
+#button_box {
+    position: absolute;
+    top: 300px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #a0a0a0;
+}
+#img_position {
+    position: absolute;
+    top: 5px;
+    left: 6%;
+    width: 88%;
+}
+#button_box img{
+    position: relative;
+    float: left;
+    height: 20px;
+    width: 20px;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+#empty {
+    position: relative;
+    float: left;
+    height: 20px;
+    width: 80px;
+    margin: 10px 5px;
+    text-align: center;
+    font-size: 10pt;
+}
+#song_total_time {
+    color: rgb(220, 100, 100);
+}
+#button_box input {
+    position: relative;
+    float: left;
+    -webkit-appearance: none !important;
+    cursor: pointer;
+    width: 55px;
+    border-radius: 4px;
+    background-color: #cacaca;
+    margin: 15px 5px;
+}
+#button_box input::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background:#108A93;
+    height:10px;
+    width:5px;
+    border-radius:20%;
+}
+#right {
+    position: relative;
+    float: left;
+    width: 420px;
+    height: 350px;
+    background: #f4f4f4;
+}
+#genre_btn {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+}
+#genre_btn button {
+    position: relative;
+    float: left;
+    width: 70px;
+    height: 30px;
+    margin-right: 10px;
+}
+#right_name {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    font-weight: bold;
+    color: #fff;
+    width: 110px;
+    background-color: #aaa;
+    padding: 8px 10px;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    font-size: 15px;
+}
+.playlist {
+    position: absolute;
+    top: 85px;
+    left: 40px;
+    height: 260px;
+    width: 340px;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-top: solid 3px #e0e0e0;
+    border-bottom: solid 3px  #e0e0e0;
+    background-color: #fff;
+}
+#playlist_trot {
+    display: none;
+}
+#playlist_pop {
+    display: none;
+}
+#playlist_rock {
+    display: none;
+}
+.list_block {
+    position: absolute;
+    width: 100%;
+    background: rgba(100, 100, 100, 0.9);
+    z-index: 1;
+}
+.list_block span {
+    position: absolute;
+    left: 60px;
+    font-size: 12pt;
+    color: rgb(220, 220, 220);
+    font-weight: bold;
+    display: none;
+}
+.music {
+    position: relative;
+    float: left;
+    width: calc(100% - 20px);
+    height: 24px;
+    padding: 3px 10px;
+    font-size: 10pt;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+    cursor: pointer;
+}
+.music:hover {
+    background-color: #f6f6f6;
+}
+/************************************************************/
+#appearance7 .rs-range-color {
+    /*background-color: #33B5E5;*/
+    background-color: rgb(251, 59, 64);
+}
+
+#appearance7 .rs-path-color {
+    /*background-color: #C2E9F7;*/
+    background-color: rgb(251, 177, 192);
+}
+
+#appearance7 .rs-handle {
+    /*background-color: #C2E9F7;
+    padding: 7px;
+    border: 2px solid #C2E9F7;*/
+    background-color: rgb(251, 177, 192);
+    padding: 7px;
+    border: 2px solid rgb(251, 177, 192);
+}
+
+#appearance7 .rs-handle.rs-focus {
+    /*border-color: #33B5E5;*/
+    border-color: rgb(251, 59, 64);
+}
+
+#appearance7 .rs-handle:after {
+    /*
+    border-color: #33B5E5;
+    background-color: #33B5E5;
+    */
+    background-color: rgb(251, 59, 64);
+    border-color: rgb(251, 59, 64);
+}
+
+#appearance7 .rs-border {
+    border-color: transparent;
+}
+
+#appearance7 .rs-inner {
+    background-image: url('image/test_albumart1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

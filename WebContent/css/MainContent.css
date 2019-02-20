@@ -1,0 +1,300 @@
+* {
+	box-sizing: content-box;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+#main_album {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 430px;
+}
+.content_name {
+    position: absolute;
+    height: 40px;
+    width: 190px;
+    background: rgb(100, 100, 100);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.content_name span {
+    position: relative;
+    left: 20px;
+    top: 7px;
+    color: white;
+    font-size: 18px;
+}
+#album_tag {
+    top: calc(50% - 165px);
+    left: calc(50% - 500px);
+}
+#album_tag_sub {
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(50% - 290px);
+}
+#album_tag_sub span{
+    font-size: 11pt;
+    margin-right: 10px;
+    cursor: pointer;
+}
+#album_tag_sub span:hover {
+    font-size: 12pt;
+    color: rgb(255, 128, 128);
+}
+.content_background {
+    position: absolute;
+    background-color: rgb(195, 195, 195);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+#album_imagebackground {
+    top: calc(50% - 124px); 
+    left: calc(50% - 500px);
+    height: 335px;
+    width: 1000px;
+}
+#album_imagebox {
+    position: absolute;
+    top: 10px; 
+    left: 100px;
+    height: 240px;
+    width: 500px;
+    border-radius: 2px;
+    -webkit-transform-style: preserve-3d;
+    -webkit-animation: rint 60s infinite linear;
+}
+#album_imagebox:hover {
+    -webkit-animation-play-state: paused;
+}
+.album_image {
+    position: absolute;
+    top: calc(50% - 80px);
+    left: calc(50% - 80px);
+    height: 160px;
+    width: 160px;
+    cursor: pointer;
+}
+.album_image:nth-child(1){ -webkit-transform: rotateY(0deg)translateZ(300px);}
+.album_image:nth-child(2){ -webkit-transform: rotateY(40deg) translateZ(300px);}
+.album_image:nth-child(3){ -webkit-transform: rotateY(80deg) translateZ(300px);}
+.album_image:nth-child(4){ -webkit-transform: rotateY(120deg) translateZ(300px);}
+.album_image:nth-child(5){ -webkit-transform: rotateY(160deg) translateZ(300px);}
+.album_image:nth-child(6){ -webkit-transform: rotateY(200deg) translateZ(300px);}
+.album_image:nth-child(7){ -webkit-transform: rotateY(240deg) translateZ(300px);}
+.album_image:nth-child(8){ -webkit-transform: rotateY(280deg) translateZ(300px);}
+.album_image:nth-child(9){ -webkit-transform: rotateY(320deg) translateZ(300px);}
+@-webkit-keyframes rint {
+    from { -webkit-transform: rotateX(-3deg) rotateY(0deg); }
+    to { -webkit-transform: rotateX(-3deg) rotateY(360deg); }
+}
+.album_image img {
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+    -webkit-box-reflect: below 5px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent) , to(rgba(150, 150, 150, 0.4)));
+}
+.album_image img:hover {
+    height: 150%;
+    width: 150%;
+    margin: -40px 0 0 -40px;
+}
+#bottom_circle {
+    position: absolute;
+    left: 20px;
+    top: 220px;
+    width: 660px;
+    height: 70px;
+}
+#bottom_circle img{
+    width: 100%;
+    height: 100%;
+}
+#album_inform {
+    position: absolute;
+    top: 40px;
+    left: 720px;
+    height: 220px;
+    width: 250px;
+    background-color: rgb(150, 150, 150);
+    cursor: pointer;
+}
+#album_inform img {
+    position: absolute;
+    left: 10px;
+    top: 13px;
+    width: 50px;
+    height: 50px;
+}
+#album_inform span {
+    position: absolute;
+    left: 10px;
+    top: 70px;
+    width: 230px;
+    font-size: 10pt;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+}
+#album_more {
+    position: absolute;
+    top: 270px;
+    left: 910px;
+    height: 20px;
+    width: 30px;
+    font-size: 10pt;
+    cursor: pointer;
+}
+/*****************************************************/
+#main_channel {
+    position: absolute;
+    top: 430px;
+    left: 0;
+    width: 100%;
+    height: 300px;
+}
+#channel_tag {
+    top: calc(50% - 85px);
+    left: calc(50% - 500px);
+}
+#channel_imagebox {
+    top: calc(50% - 44px);
+    left: calc(50% - 500px);
+    height: 170px;
+    width: 1000px;
+}
+.channel_image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 80px;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+#channel01 {
+    margin: -40px 0 0 -460px;
+}
+#channel02 {
+    margin: -40px 0 0 -220px;
+}
+#channel03 {
+    margin: -40px 0 0 20px;
+}
+#channel04 {
+    margin: -40px 0 0 260px;
+}
+/*****************************************************/
+#main_seamdj {
+    position: absolute;
+    top: 380px;
+    left: 0;
+    width: 100%;
+    height: 570px;
+}
+#seamdj_tag {
+    top: calc(50% - 185px);
+    left: calc(50% - 500px);
+}
+#seamdj_imagebox {
+    top: calc(50% - 144px);
+    left: calc(50% - 500px);
+    height: 280px;
+    width: 1000px;
+}
+.seamdj_image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 180px;
+    height: 240px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#seamdj01 {
+    margin: -120px 0 0 -415px;
+}
+#seamdj02 {
+    margin: -120px 0 0 -200px;
+}
+#seamdj03 {
+    margin: -120px 0 0 15px;
+}
+#seamdj04 {
+    margin: -120px 0 0 230px;
+}
+.seamdj_cover {
+    position: absolute;
+    top: 4.5%;
+    left: 7.5%;
+    width: 85%;
+    height: 70%;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+.seamdj_cover img {
+    height: 100%;
+    width: 100%;
+    border: solid 1px rgb(180, 180, 180);
+}
+.seamdj_info {
+    position: absolute;
+    top: 77%;
+    left: 7.5%;
+    width: 85%;
+    height: 20%;
+}
+.seamdj_info_image {
+    position: absolute;
+    top: 10%;
+    left: 7%;
+    height: 80%;
+    width: 26%;
+    border-radius: 50%;
+    background-color: lightgray;
+}
+
+.seamdj_info_image img {
+	width: 100%;
+	height: 100%;
+	border: solid 1px rgb(180, 180, 180);
+	border-radius: 50%;
+}
+
+.seamdj_info_img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.seamdj_info_id {
+    position: absolute;
+    top: 2%;
+    left: 40%;
+    height: 40%;
+    width: 70%;
+}
+.seamdj_info_id span {
+    font-size: 8pt;
+}
+.seamdj_info_title {
+    position: absolute;
+    top: 52%;
+    left: 40%;
+    height: 40%;
+    width: 70%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+.seamdj_info_title span {
+    font-size: 8pt;
+    max-width: 70%;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,774 @@
+* {
+    box-sizing: content-box;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+body {
+    position: absolute;
+    left: calc(50% - 500px);
+    width: 1000px;
+    margin-top: 30px;
+}
+.search_div {
+    position: relative;
+    width: 100%;
+}
+.click {
+    cursor: pointer;
+}
+.more {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 950px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 10pt;
+}
+/************************* search *************************/
+#search {
+    height: 40px;
+    margin-bottom: 30px;
+}
+#search select {
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 30px;
+}
+#search input[type="text"] {
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 25px;
+    margin-left: 10px;
+}
+#search input[type="submit"] {
+    position: relative;
+    float: left;
+    height: 25px;
+    margin-left: 10px;
+}
+/************************* search_artist *************************/
+#search_artist {
+    position: relative;
+    width: 100%;
+}
+#search_artist img {
+	border: solid 1px rgb(180, 180, 180);
+}
+
+#artist_box {
+    position: relative;
+    margin-top: 20px;
+    height: 180px;
+    width: 100%;
+}
+#artist_first {
+    position: relative;
+    float: left;
+    width: 45%;
+    height: 180px;
+    margin-left: 2.5%;
+    border-right: solid 2px rgb(200, 200, 200);
+}
+#artist_first img {
+    position: relative;
+    float: left;
+    width: 180px;
+    height: 180px;
+    cursor: pointer;
+}
+#artist_first_box {
+    position: relative;
+    float: left;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+#artist_first_name {
+    position: relative;
+    width: 200px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 15pt;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+#artist_first_name span {
+	margin-left: 7px;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+#artist_first_info {
+    position: relative;
+    float: left;
+    width: 200px;
+    font-size: 10pt;
+    line-height: 15pt;
+    margin-left: 10px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+#artist_first_member {
+	width: 200px;
+	white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+#other_artist {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 180px;
+}
+.other_artist {
+    position: relative;
+    float: left;
+    width: 120px;
+    height: 150px;
+    font-size: 10pt;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.other_artist img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 5px;
+}
+
+.other_artist span {
+	display: inline-block;
+    width: 120px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+#other_artist2 {
+    position: relative;
+    clear: both;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+.no_search_result {
+	position: relative;
+    width: 965px;
+    height: 150px;
+    margin: 10px 0 10px 15px;
+    background-color: rgb(240, 240, 240);
+}
+
+.no_search_result span {
+	display: inline-block;
+	position: absolute;
+	width: 370px;
+	height: 36px;
+	left: calc(50% - 185px);
+	top: calc(50% - 18px);
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	color: rgb(60, 60, 60);
+}
+
+.move_artist, .move_album, .move_playlist, .move_music, .move_member {
+	cursor: pointer;
+}
+
+
+/*******************************************/
+
+#musicList {
+	position: relative;
+    height: auto;
+}
+
+#musicList_header {
+	margin-left: 4px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-left: solid 4px rgb(251, 59, 64);
+}
+
+#musicList_btns {
+	position: relative;
+    width: 1000px;
+    height: 50px;
+}
+
+#musicList_btns a {
+    display: inline-block;
+    height: 20px;
+    padding: 8px 10px 5px 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 12pt;
+    line-height: 20px;
+    color: #B4B4B4;
+    background-color: white;
+}
+
+#musicList_btns a font {
+    color: black;
+}
+
+
+/* Color Circles */
+
+#musicList_btns a:before {
+    display: inline-block;
+    content: '';
+    background-size: 15px 15px;
+    width: 15px;
+    height: 15px;
+    top: 8px;
+    left: 8px;
+}
+
+
+/* Clear Floats */
+
+#musicList_btns:before,
+#musicList_btns:after {
+    content: '';
+    display: inline-block;
+    clear: both;
+}
+
+#all_select {
+    left: 25px;
+    top: 10px;
+    border-radius: 7px;
+    border-style: solid;
+}
+
+#select_listen {
+    left: 145px;
+    top: 10px;
+    border-radius: 7px;
+    border-style: solid;
+}
+
+#select_add {
+    left: 265px;
+    top: 10px;
+    border-radius: 7px;
+    border-style: solid;
+}
+
+#all_select:before {
+    background: url('../image/check_icon.png') no-repeat top left;
+}
+
+#select_listen:before {
+    background: url('../image/listen_over_icon.png') no-repeat top left;
+}
+
+#select_add:before {
+    background: url('../image/add_over_icon.png') no-repeat top left;
+}
+
+#musicList_content {
+    width: 1000px;
+    height: auto;
+    border-top: solid 2px rgb(130, 130, 130);
+    border-bottom: solid 2px rgb(130, 130, 130);
+}
+
+#musicList_content_title {
+    position: relative;
+    width: 970px;
+    height: 35px;
+    left: 15px;
+    border-bottom: solid 3px rgb(251, 159, 164);
+    color: black;
+}
+
+#musicList_box {
+    position: relative;
+    height: auto;
+}
+
+#musicList_no {
+    display: inline-block;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 73px;
+    top: 5px;
+}
+
+#musicList_music {
+    display: inline-block;
+    position: absolute;
+    width: 50px;
+    height: 35px;
+    left: 275px;
+    top: 5px;
+}
+
+#musicList_artist {
+    display: inline-block;
+    position: absolute;
+    width: 70px;
+    height: 35px;
+    left: 475px;
+    top: 5px;
+}
+
+#musicList_album {
+    display: inline-block;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 700px;
+    top: 5px;
+}
+
+#musicList_listen {
+    display: inline-block;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 825px;
+    top: 5px;
+}
+
+#musicList_add {
+    display: inline-block;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 875px;
+    top: 5px;
+}
+
+#musicList_lyrics {
+    display: inline-block;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 925px;
+    top: 5px;
+}
+
+
+/***********/
+.musicList_content_list {
+    position: relative;
+    width: 970px;
+    height: 60px;
+    left: 15px;
+    border-bottom: solid 1px rgb(180, 180, 180);
+}
+
+.musicList_select {
+    display: inline-block;
+    position: absolute;
+    width: 25px;
+    height: 60px;
+    left: 15px;
+    top: 25px;
+}
+
+.musicList_no {
+    display: inline-block;
+    position: absolute;
+    width: 35px;
+    height: 60px;
+    left: 50px;
+    top: 25px;
+    text-align: right;
+}
+
+.musicList_music {
+    display: inline-block;
+    position: absolute;
+    width: 270px;
+    height: 50px;
+    left: 120px;
+    top: 10px;
+}
+
+.musicList_music img {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.musicList_music span {
+    position: absolute;
+    width: 215px;
+    height: 35px;
+    left: 55px;
+    top: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.musicList_artist {
+    display: inline-block;
+    position: absolute;
+    width: 175px;
+    height: 25px;
+    left: 425px;
+    top: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+}
+
+.musicList_artist span {
+	cursor: pointer;
+}
+
+.musicList_album {
+    display: inline-block;
+    position: absolute;
+    width: 150px;
+    height: 25px;
+    left: 650px;
+    top: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.musicList_listen {
+    display: inline-block;
+    position: absolute;
+    width: 35px;
+    height: 30px;
+    left: 825px;
+    top: 25px;
+}
+
+.musicList_listen img {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 5px;
+    top: 2.5px;
+    cursor: pointer;
+}
+
+.musicList_add {
+    display: inline-block;
+    position: absolute;
+    width: 35px;
+    height: 30px;
+    left: 875px;
+    top: 25px;
+}
+
+.musicList_add img {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 5px;
+    top: 2.5px;
+    cursor: pointer;
+}
+
+.musicList_lyrics {
+    display: inline-block;
+    position: absolute;
+    width: 35px;
+    height: 30px;
+    left: 925px;
+    top: 25px;
+}
+
+.musicList_lyrics img {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 5px;
+    top: 2.5px;
+    cursor: pointer;
+}
+
+
+/***********/
+
+/************************* title *************************/
+.music_table_title {
+    position: relative;
+    width: 100%;
+    margin-left: 4px;
+    font-size: 14pt;
+    font-weight: bold;
+    padding-bottom: 15px;
+    border-bottom: solid 1px rgb(200, 200, 200);
+}
+hr {
+    border-color: rgb(200, 200, 200);
+}
+.colorbox {
+    position: relative;
+    float: left;
+    width: 4px;
+    height: 26px;
+    background: rgb(251, 59, 64);
+    margin-right: 10px;
+}
+.music_table_title span {
+    font-size: 13pt;
+    font-weight: bold;
+    color: rgb(100, 100, 100);
+}
+#button_box {
+    position: relative;
+    left: 25px;
+    height: 40px;
+    width: 400px;
+}
+#button_box button {
+    position: relative;
+    top: 8px;
+    height: 30px;
+}
+#button_box button img {
+    width: 10px;
+    height: 10px;
+}
+/************************* music_table *************************/
+/* .table {
+    position: relative;
+    margin-left: 25px;
+    width: 950px;
+    font-size: 11pt;
+    border-collapse: collapse;
+}
+.music_thead tr {
+    text-align: center;
+    height: 40px;
+    font-weight: bold;
+    border-bottom: solid 2px rgb(150, 150, 150);
+}
+.music_tbody td {
+    height: 60px;
+    border-bottom: solid 1px rgb(200, 200, 200);
+}
+.check {
+    width: 50px;
+    text-align: center;
+}
+.music_tbody .check {
+    cursor: pointer;
+}
+.album_image {
+    width: 70px;
+    text-align: center;
+}
+.album_image img {
+    width: 50px;
+    height: 50px;
+}
+.button {
+    width: 30px;
+    text-align: center;
+}
+.button img {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+} */
+/************************* album_table *************************/
+#album_table {
+    position: relative;
+    /* margin-left: 40px; */
+    margin-top: 10px;
+    width: 1000px;
+    height: 180px;
+}
+.album_info {
+    position: relative;
+    float: left;
+    width: 450px;
+    height: 150px;
+    background:  rgb(200, 200, 200);
+    margin: 5px 20px;
+}
+.album_info img {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    height: 120px;
+    width: 120px;
+}
+.album_info_detail {
+    position: absolute;
+    left: 155px;
+    width: 250px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+#album_info_title {
+    top: 30px;
+    font-weight: bold;
+}
+#album_info_artist {
+    top: 55px;
+    font-size: 10pt;
+}
+#album_info_count {
+    top: 75px;
+    font-size: 10pt;
+    color: rgb(100, 100, 100);
+}
+#album_info_release {
+    top: 95px;
+    font-size: 10pt;
+    color: rgb(100, 100, 100);
+}
+/************************* lyrics_table *************************/
+#lyrics_table {
+    position: relative;
+    width: 1000px;
+    /* margin-left: 50px; */
+    margin-top: 20px;
+}
+.lyrics_box {
+	margin-left: 50px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+.lyrics_title {
+    font-size: 12pt;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.lyrics {
+	width: 900px;
+	white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    font-size: 10pt;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.lyrics_artist {
+    font-size: 10pt;
+    color: rgb(100, 100, 100);
+    font-weight: bold;
+}
+/************************* dj_table *************************/
+.dj_box {
+    position: relative;
+    float: left;
+    width: 920px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px rgb(230, 230, 230);
+}
+.dj_cover {
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+.dj_info {
+    position: relative;
+    float: left;
+    width: 500px;
+    height: 100px;
+    margin-left: 30px;
+    font-size: 10pt;
+    border-right: solid 1px rgb(200, 200, 200);
+}
+#dj_title {
+    font-weight: bold;
+    color: rgb(243, 119, 117);
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+#dj_date {
+    float: left;
+    margin-right: 20px;
+}
+.dj_music_box {
+    position: relative;
+    float: left;
+    margin-top: 35px;
+}
+.dj_music {
+    position: relative;
+    height: 20px;
+    margin: 9px 0;
+}
+.dj_music_img {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+}
+.dj_music_title {
+    float: left;
+    width: 170px;
+    font-size: 10pt;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+.dj_music_artist {
+    float: left;
+    width: 60px;
+    font-size: 10pt;
+    color: rgb(243, 119, 117);
+    font-weight: bold;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+/***********************다이얼로그************************/
+
+.modal-body {
+    margin: 0;
+    padding: 1px;
+}
+
+.modal-footer {
+    margin: 0;
+}
+
+#lyrics_dialog {
+    width: 510px;
+}
+
+#lyrics_iframe {
+    width: 100%;
+    height: 420px;
+    border: none;
+}
+
+#lyrics_iframe::-webkit-scrollbar {
+    display: none;
+}
+
+
+/*****************************************************/

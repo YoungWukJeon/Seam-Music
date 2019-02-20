@@ -1,0 +1,1300 @@
+html, body {
+	margin: 0;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+/* #logo {
+    position: absolute;
+    width: 180px;
+    height: 50px;
+    left: calc(50% - 90px);
+    top: 25px;
+}
+
+#logo img {
+    width: 100%;
+    height: 100%;
+}
+
+#regist_title {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: calc(50% - 100px);
+    top: 85px;
+    font-size: 40px;
+} */
+
+#step {
+    position: absolute;
+    width: 502px;
+    height: 50px;
+    left: calc(50% - 250px);
+    /* top: 145px; */
+    top: 0px;
+    background-color: rgb(251, 59, 64);
+    z-index: 3;
+}
+
+#step div {
+    position: absolute;
+    display: inline-block;
+    height: 50px;
+    border-radius: 0 30px 30px 0;
+}
+
+#step div span {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    margin: 5px 0 5px 0;
+    font-size: 30px;
+}
+
+.selected_step {
+    width: 350px;
+    background-color: white;
+    box-sizing: border-box;
+    border: solid 1px rgb(251, 59, 64);
+}
+
+.non_selected_step {
+    width: 50px;
+    background-color: rgb(251, 59, 64);
+    box-sizing: border-box;
+}
+
+#content {
+    position: absolute;
+    width: 500px;
+    height: auto;
+    left: calc(50% - 250px);
+    /* top: 190px; */
+    top: 45px;
+    /* margin-bottom: 20px; */
+    border: solid 1px rgb(180, 180, 180);
+}
+
+#cert {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    border-bottom: solid 1px rgb(180, 180, 180);
+}
+
+#cert_method {
+    position: absolute;
+    width: 320px;
+    height: 40px;
+    left: calc(50% - 160px);
+    top: 20px;
+    font-weight: bold;
+}
+
+#cert_method a {
+    position: absolute;
+    width: 170px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: white;
+    font-size: 16px;
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+#cert_method :nth-child(1) {
+    left: 0;
+}
+
+#cert_method :nth-child(2) {
+    right: 0;
+}
+
+#cert_method a :nth-child(1) {
+    position: absolute;
+    left: calc(50% - 70px);
+    top: calc(50% - 15px);
+    margin: 3px 12px 3px 12px;
+    text-align: center;
+}
+
+.selected_method {
+    border: solid 2px rgb(251, 59, 64);
+    color: rgb(251, 59, 64);
+    z-index: 2;
+}
+
+.non_selected_method {
+    border: solid 2px rgb(150, 150, 150);
+    color: rgb(150, 150, 150);
+    z-index: 1;
+}
+
+#content p {
+    position: absolute;
+    left: 40px;
+    top: 60px;
+}
+
+
+/*******************************************/
+
+#cert_name {
+    position: absolute;
+    width: 440px;
+    height: 50px;
+    left: calc(50% - 220px);
+    top: 110px;
+}
+
+.column_name {
+    display: inline-block;
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    left: 0;
+    top: 10px;
+    text-align: right;
+}
+
+#name_input {
+    display: inline-block;
+    position: absolute;
+    width: 320px;
+    left: 100px;
+    height: 50px;
+    margin-left: 20px;
+    border: solid 1px rgb(120, 120, 120);
+    border-radius: 10px;
+}
+
+#name_input input {
+    position: absolute;
+    width: 270px;
+    height: 30px;
+    left: 10px;
+    top: 8px;
+    padding-left: 5px;
+    border: none;
+}
+
+#name_input a {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 285px;
+    top: 12.5px;
+    text-decoration: none;
+}
+
+#name_input a img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/***************************************/
+
+#cert_phone {
+    position: absolute;
+    width: 440px;
+    height: 50px;
+    left: calc(50% - 220px);
+    top: 180px;
+}
+
+#phone_input {
+    display: inline-block;
+    position: absolute;
+    width: 320px;
+    left: 100px;
+    height: 50px;
+    margin-left: 20px;
+    border: solid 1px rgb(120, 120, 120);
+    border-radius: 10px;
+}
+
+#phone_input input {
+    position: absolute;
+    width: 270px;
+    height: 30px;
+    left: 10px;
+    top: 8px;
+    padding-left: 5px;
+    border: none;
+}
+
+#phone_input a {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 285px;
+    top: 12.5px;
+    text-decoration: none;
+}
+
+#phone_input a img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/***********************************************/
+
+#cert_email {
+	display: none;
+    position: absolute;
+    width: 440px;
+    height: 50px;
+    left: calc(50% - 220px);
+    top: 180px;
+}
+
+#email_input {
+    display: inline-block;
+    position: absolute;
+    width: 170px;
+    left: 100px;
+    height: 50px;
+    margin-left: 20px;
+    border: solid 1px rgb(120, 120, 120);
+    border-radius: 10px;
+}
+
+#email_input input {
+    position: absolute;
+    width: 110px;
+    height: 30px;
+    left: 10px;
+    top: 8px;
+    padding-left: 5px;
+    border: none;
+}
+
+#email_input a {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 125px;
+    top: 12.5px;
+    text-decoration: none;
+}
+
+#email_input a img {
+    width: 100%;
+    height: 100%;
+}
+
+#cert_email select {
+    position: absolute;
+    width: 130px;
+    height: 50px;
+    left: 180px;
+    top: 0px;
+    padding-left: 5px;
+    border: solid 1px rgb(120, 120, 120);
+    border-radius: 10px;
+}
+
+#cert_email select option {
+    font-size: 20px;
+}
+
+
+/***********************************************/
+
+#cert_number {
+    position: absolute;
+    width: 440px;
+    height: 50px;
+    left: calc(50% - 220px);
+    top: 250px;
+}
+
+#cert_number a {
+    position: absolute;
+    width: 80px;
+    height: 60px;
+    left: 355px;
+    top: 0;
+    text-decoration: none;
+}
+
+#cert_number a div {
+    width: 100%;
+    height: 80%;
+    border: solid;
+    border-radius: 10px;
+    color: rgb(50, 50, 50);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#number_input {
+    display: inline-block;
+    position: absolute;
+    width: 220px;
+    left: 100px;
+    height: 50px;
+    margin-left: 20px;
+    border: solid 1px rgb(120, 120, 120);
+    border-radius: 10px;
+}
+
+#number_input input {
+    position: absolute;
+    width: 170px;
+    height: 30px;
+    left: 10px;
+    top: 8px;
+    padding-left: 5px;
+    border: none;
+}
+
+#number_input a {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 185px;
+    top: 12.5px;
+    text-decoration: none;
+}
+
+#number_input a img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/***************************************/
+
+#rules {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#all_agree {
+    position: relative;
+    width: 440px;
+    height: 50px;
+    border-bottom: solid 1px rgb(180, 180, 180);
+}
+
+#all_agree label {
+    position: absolute;
+    left: 0;
+    top: 14px;
+    cursor: pointer;
+}
+
+#all_agree label span {
+    font-size: 12px;
+    color: rgb(90, 90, 90);
+}
+
+#agree {
+    position: relative;
+    width: 440px;
+    height: auto;
+}
+
+.rule {
+    position: relative;
+    width: 440px;
+    height: 50px;
+}
+
+.open_btn {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 14px;
+}
+
+.open_btn img {
+    width: 100%;
+    height: 50%;
+    margin-top: 50%;
+    cursor: pointer;
+}
+
+.terms {
+    position: absolute;
+    width: 80px;
+    height: 15px;
+    top: 14px;
+    cursor: pointer;
+}
+
+.terms span {
+    position: absolute;
+    width: 80px;
+    left: 5px;
+    font-size: 13px;
+    color: rgb(90, 90, 90);
+}
+
+.terms img {
+    position: absolute;
+    width: 7px;
+    height: 14px;
+    left: 77px;
+    top: 3px;
+}
+
+.open_rule {
+    height: 200px;
+}
+
+.rule label {
+    position: absolute;
+    left: 0;
+    top: 14px;
+    cursor: pointer;
+}
+
+.rule_content {
+    position: absolute;
+    width: 99%;
+    height: 150px;
+    left: 0;
+    top: 45px;
+    border: solid 1px rgb(120, 120, 120);
+    border-radius: 15px;
+}
+
+.rule_content div {
+    width: 95%;
+    height: 90%;
+    margin-top: 1.5%;
+    font-size: 12px;
+    text-align: left;
+    overflow-y: auto;
+}
+
+.rule_content div li {
+    padding-left: 10px;
+    margin: 5px 0 5px 0;
+    list-style: none;
+    text-indent: -10px;
+}
+
+.essential_rule {
+    font-size: 12px;
+    color: rgb(251, 59, 64);
+}
+
+.optionative_rule {
+    font-size: 12px;
+    color: rgb(120, 120, 120);
+}
+
+
+/***************************************/
+
+
+/************************************/
+
+#essential_info {
+    position: relative;
+    width: 100%;
+    height: 520px;
+}
+
+
+/*******************************************/
+
+#regist_id {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    left: calc(50% - 250px);
+    top: 30px;
+}
+
+.column_name {
+    display: inline-block;
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    left: 0;
+    top: 10px;
+    text-align: right;
+}
+
+#regist_id a {
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    left: 355px;
+    top: 0;
+    text-decoration: none;
+}
+
+#regist_id a div {
+    width: 100%;
+    height: 80%;
+    margin-top: 10%;
+    border: solid;
+    border-radius: 10px;
+    color: rgb(50, 50, 50);
+    font-weight: bold;
+}
+
+#id_input {
+    display: inline-block;
+    position: absolute;
+    width: 220px;
+    left: 100px;
+    height: 50px;
+    margin-left: 20px;
+    border: solid 1px rgb(120, 120, 120);
+    border-radius: 10px;
+}
+
+#id_input input {
+    position: absolute;
+    width: 170px;
+    height: 30px;
+    left: 10px;
+    top: 8px;
+    padding-left: 5px;
+    border: none;
+}
+
+#id_input a {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 185px;
+    top: 12.5px;
+    text-decoration: none;
+}
+
+#id_input a img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/***************************************/
+
+#regist_passwd {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    left: calc(50% - 250px);
+    top: 100px;
+}
+
+#passwd_input {
+    display: inline-block;
+    position: absolute;
+    width: 320px;
+    left: 100px;
+    height: 50px;
+    margin-left: 20px;
+    border: solid 1px rgb(120, 120, 120);
+    border-radius: 10px;
+}
+
+#passwd_input input {
+    position: absolute;
+    width: 170px;
+    height: 30px;
+    left: 10px;
+    top: 8px;
+    padding-left: 5px;
+    border: none;
+}
+
+#passwd_input a {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 225px;
+    top: 12.5px;
+    text-decoration: none;
+}
+
+#passwd_input a img {
+    width: 100%;
+    height: 100%;
+}
+
+#passwd_view {
+    position: absolute;
+    width: 38px;
+    height: 23px;
+    left: 260px;
+    top: 12px;
+    border: solid 2px rgb(60, 60, 60);
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/***************************************/
+
+#regist_passwd_conf {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    left: calc(50% - 250px);
+    top: 170px;
+}
+
+#passwd_conf_input {
+    display: inline-block;
+    position: absolute;
+    width: 320px;
+    left: 100px;
+    height: 50px;
+    margin-left: 20px;
+    border: solid 1px rgb(120, 120, 120);
+    border-radius: 10px;
+}
+
+#passwd_conf_input input {
+    position: absolute;
+    width: 170px;
+    height: 30px;
+    left: 10px;
+    top: 8px;
+    padding-left: 5px;
+    border: none;
+}
+
+#passwd_conf_input a {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 225px;
+    top: 12.5px;
+    text-decoration: none;
+}
+
+#passwd_conf_input a img {
+    width: 100%;
+    height: 100%;
+}
+
+#passwd_conf_view {
+    position: absolute;
+    width: 38px;
+    height: 23px;
+    left: 260px;
+    top: 12px;
+    border: solid 2px rgb(60, 60, 60);
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/***************************************/
+
+#regist_name {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    left: calc(50% - 250px);
+    top: 240px;
+}
+
+#regist_name_input {
+    display: inline-block;
+    position: absolute;
+    width: 320px;
+    left: 100px;
+    height: 50px;
+    margin-left: 20px;
+    border: solid 1px rgb(120, 120, 120);
+    border-radius: 10px;
+}
+
+#regist_name_input input {
+    position: absolute;
+    width: 270px;
+    height: 30px;
+    left: 10px;
+    top: 8px;
+    padding-left: 5px;
+    border: none;
+}
+
+#regist_name_input a {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 285px;
+    top: 12.5px;
+    text-decoration: none;
+}
+
+#regist_name_input a img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/***************************************/
+
+#regist_nickname {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    left: calc(50% - 250px);
+    top: 310px;
+}
+
+#regist_nickname a {
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    left: 355px;
+    top: 0;
+    text-decoration: none;
+}
+
+#regist_nickname a div {
+    width: 100%;
+    height: 80%;
+    margin-top: 10%;
+    border: solid;
+    border-radius: 10px;
+    color: rgb(50, 50, 50);
+    font-weight: bold;
+}
+
+#nickname_input {
+    display: inline-block;
+    position: absolute;
+    width: 220px;
+    left: 100px;
+    height: 50px;
+    margin-left: 20px;
+    border: solid 1px rgb(120, 120, 120);
+    border-radius: 10px;
+}
+
+#nickname_input input {
+    position: absolute;
+    width: 170px;
+    height: 30px;
+    left: 10px;
+    top: 8px;
+    padding-left: 5px;
+    border: none;
+}
+
+#nickname_input a {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 185px;
+    top: 12.5px;
+    text-decoration: none;
+}
+
+#nickname_input a img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/************************************/
+
+#regist_phone {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    left: calc(50% - 250px);
+    top: 380px;
+}
+
+#regist_phone_input {
+    display: inline-block;
+    position: absolute;
+    width: 320px;
+    left: 100px;
+    height: 50px;
+    margin-left: 20px;
+    border: solid 1px rgb(120, 120, 120);
+    border-radius: 10px;
+}
+
+#regist_phone_input input {
+    position: absolute;
+    width: 270px;
+    height: 30px;
+    left: 10px;
+    top: 8px;
+    padding-left: 5px;
+    border: none;
+}
+
+#regist_phone_input a {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 285px;
+    top: 12.5px;
+    text-decoration: none;
+}
+
+#regist_phone_input a img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/***********************************************/
+
+#regist_email {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    left: calc(50% - 250px);
+    top: 450px;
+}
+
+#regist_email_input {
+    display: inline-block;
+    position: absolute;
+    width: 170px;
+    left: 100px;
+    height: 50px;
+    margin-left: 20px;
+    border: solid 1px rgb(120, 120, 120);
+    border-radius: 10px;
+}
+
+#regist_email_input input {
+    position: absolute;
+    width: 110px;
+    height: 30px;
+    left: 10px;
+    top: 8px;
+    padding-left: 5px;
+    border: none;
+}
+
+#regist_email_input a {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 125px;
+    top: 12.5px;
+    text-decoration: none;
+}
+
+#regist_email_input a img {
+    width: 100%;
+    height: 100%;
+}
+
+#regist_email_input select {
+    position: absolute;
+    width: 130px;
+    height: 50px;
+    left: 180px;
+    top: 0px;
+    padding-left: 5px;
+    border: solid 1px rgb(120, 120, 120);
+    border-radius: 10px;
+}
+
+#regist_email_input select option {
+    font-size: 20px;
+}
+
+
+/************************************/
+
+#sub_info {
+    position: relative;
+    width: 100%;
+    height: 520px;
+}
+
+
+/*************************************/
+
+#regist_birth {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    left: calc(50% - 250px);
+    top: 30px;
+}
+
+#year_input {
+    left: 100px;
+}
+
+.birth_input {
+    display: inline-block;
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    margin-left: 20px;
+    border: solid 1px rgb(120, 120, 120);
+    border-radius: 10px;
+}
+
+.birth_input input {
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    left: 10px;
+    top: 8px;
+    padding-left: 5px;
+    border: none;
+    text-align: right;
+}
+
+.birth_input span {
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 70px;
+    top: 13px;
+}
+
+#month_input {
+    left: 210px;
+}
+
+#day_input {
+    left: 320px;
+}
+
+
+/************************************/
+
+#regist_gender {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    left: calc(50% - 250px);
+    top: 100px;
+}
+
+#gender_input {
+    display: inline-block;
+    position: absolute;
+    width: 320px;
+    height: 50px;
+    left: 100px;
+    margin-left: 20px;
+}
+
+#gender_input label {
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    top: 12px;
+    padding-left: 5px;
+    border: none;
+    text-align: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#gender_input label input {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 0;
+    top: 2px;
+    margin: 0;
+}
+
+#gender_input label span {
+    display: inline-block;
+    position: absolute;
+    width: 70px;
+    height: 30px;
+    top: 0px;
+    left: 0px;
+}
+
+
+/*************************************/
+
+#regist_job {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    left: calc(50% - 250px);
+    top: 170px;
+}
+
+#job_input {
+    display: inline-block;
+    position: absolute;
+    width: 320px;
+    left: 100px;
+    height: 50px;
+    margin-left: 20px;
+    border: solid 1px rgb(120, 120, 120);
+    border-radius: 10px;
+}
+
+#job_input input {
+    position: absolute;
+    width: 270px;
+    height: 30px;
+    left: 10px;
+    top: 8px;
+    padding-left: 5px;
+    border: none;
+}
+
+#job_input a {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 285px;
+    top: 12.5px;
+    text-decoration: none;
+}
+
+#job_input a img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/************************************/
+
+#regist_hometown {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    left: calc(50% - 250px);
+    top: 240px;
+}
+
+#hometown_input {
+    display: inline-block;
+    position: absolute;
+    width: 320px;
+    left: 100px;
+    height: 50px;
+    margin-left: 20px;
+    border: solid 1px rgb(120, 120, 120);
+    border-radius: 10px;
+}
+
+#hometown_input input {
+    position: absolute;
+    width: 270px;
+    height: 30px;
+    left: 10px;
+    top: 8px;
+    padding-left: 5px;
+    border: none;
+}
+
+#hometown_input a {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 285px;
+    top: 12.5px;
+    text-decoration: none;
+}
+
+#hometown_input a img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*************************************/
+
+#regist_profile {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    left: calc(50% - 250px);
+    top: 310px;
+}
+
+#profile_input {
+    display: inline-block;
+    position: absolute;
+    width: 320px;
+    left: 100px;
+    height: 200px;
+    margin-left: 20px;
+    border: solid 1px rgb(120, 120, 120);
+    border-radius: 10px;
+}
+
+
+/*
+#profile_input input {
+    position: absolute;
+    width: 270px;
+    height: 30px;
+    left: 10px;
+    top: 8px;
+    padding-left: 5px;
+    border: none;
+}
+*/
+
+.filebox {
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    left: 10px;
+    top: 8px;
+    padding-left: 5px;
+    border: none;
+}
+
+.filebox input[type="file"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.filebox label {
+    display: inline-block;
+    position: absolute;
+    width: 90px;
+    height: 22px;
+    left: 210px;
+    top: 0;
+    background-color: rgb(251, 59, 64);
+    border: 1px solid #ebebeb;
+    border-bottom-color: #e2e2e2;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* named upload */
+
+.filebox .upload-name {
+    display: inline-block;
+    /* label의 패딩값과 일치 */
+    background-color: #f5f5f5;
+    border: 1px solid #ebebeb;
+    border-bottom-color: #e2e2e2;
+    border-radius: .25em;
+    -webkit-appearance: none;
+    /* 네이티브 외형 감추기 */
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.upload-name {
+    position: absolute;
+    width: 195px;
+    height: 22px;
+    left: 0;
+    top: 0;
+    font-size: 16px;
+}
+
+#preview_image {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 75px;
+    top: 38px;
+    border: none;
+}
+
+#preview_image img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+
+/****************************************/
+
+#complete {
+    position: relative;
+    width: 100%;
+    height: 520px;
+}
+
+#complete_head {
+    position: absolute;
+    width: 250px;
+    height: 110px;
+    left: calc(50% - 125px);
+    top: 130px;
+    font-size: 40px;
+}
+
+#complete_body {
+    position: absolute;
+    width: 300px;
+    height: 85px;
+    left: calc(50% - 150px);
+    top: 330px;
+    font-size: 30px;
+}
+
+
+/*************************************/
+
+#step_changer {
+    position: relative;
+    width: 100%;
+    height: 80px;
+}
+
+#step_changer div {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    margin: 20px;
+    background: rgb(251, 59, 64);
+    color: white;
+    cursor: pointer;
+}
+
+#step_changer div:hover {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    margin: 20px;
+    background: rgb(255, 39, 44);
+    color: white;
+    cursor: pointer;
+}
+
+#step_changer div span {
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    margin: 8px 0 8px 0;
+}
+
+.cancel_btn {
+    display: none;
+}

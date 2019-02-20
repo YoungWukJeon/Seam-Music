@@ -1,0 +1,75 @@
+body {
+    background-color: #555555;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background-color: #333333;
+}
+#loginstate {
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    height: 80%;
+    width: 88%;
+    background-color: white;
+}
+#m_sidemenu_chart {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    height: 13%;
+    width: 100%;
+}
+#m_sidemenu_chart img {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    height: 70%;
+    background-color: white;
+}
+#m_sidemenu_radio {
+    position: absolute;
+    top: 53%;
+    left: 0;
+    height: 13%;
+    width: 100%;
+}
+#m_sidemenu_radio img {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    height: 70%;
+    background-color: white;
+}
+#m_sidemenu_seamdj {
+    position: absolute;
+    top: 66%;
+    left: 0;
+    height: 13%;
+    width: 100%;
+}
+#m_sidemenu_seamdj img {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    height: 70%;
+    background-color: white;
+}
+#m_sidemenu_mypage {
+    position: absolute;
+    top: 79%;
+    left: 0;
+    height: 13%;
+    width: 100%;
+}
+#m_sidemenu_mypage img {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    height: 70%;
+    background-color: white;
+}
